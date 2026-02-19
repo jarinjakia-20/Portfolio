@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav> 
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#learning">My Learning</a></li>
+                <li><a href="#work">My Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <div class="header-text">
+                <h1>Hi, I'm Jarin <br> Tasnim Jakia</h1>
+                <p>I am a Software Engineering Student...</p>
+            </div>
+            <div class="header-img">
+                <img src="images/profile--B.png" alt="Profile Image">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <h1 class="sub-tittle">About Me</h1>
+                <p><br>I'm a passionate and dedicated individual with a strong interest in technology and programming. 
+                    I have a background in software engineering and have been actively involved in various projects
+                    that have allowed me to develop my skills and knowledge in the field.</p>
+            </div> 
+            <div class="about-col-2">
+                <div class="tab-tittles">
+                    <p class="tab-links active-links" onclick="openTab(event,'skills')">Skills</p>
+                    <p class="tab-links" onclick="openTab(event,'education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab"id="skills">
+                    <ul>
+                        <li><span>C , C++ , Java</span><br>Programming Languages</li>
+                        <li><span>HTML , CSS</span><br>Markup and Styling Languages</li>
+                        <li><span>MySQL</span><br>Database Management System</li>
+                    </ul>
+                </div>
+                <div class="tab-contents"id="education">
+                    <ul>
+                        <li><span>2022 - Current</span><br>BSc in Software Engineering,
+                            <br>Shahjalal University of Science and Technology</li>
+                        <li><span>2020 - 2021</span><br>Higher Secondary School Certificate from 
+                            <br>Rajuk Uttara Model College</li>
+                        <li><span>2018 - 2020</span><br>Secondary School Certificate from 
+                            <br>Rajuk Uttara Model College</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="learning">
+    <div class="container">
+        <h1 class="sub-tittle">My Learning</h1>
+        <div class="learning-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <h3>(Beginner level)</h3>
+                <p>Creating responsive and user-friendly websites using modern web technologies.</p>
+                <a href="#">learn</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-pen-nib"></i>
+                <h2>UI Design</h2>
+                <h3>(Basic)</h3>
+                <p>Designing intuitive and visually appealing user interfaces for web and mobile applications.</p>
+                <a href="#">learn</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i> 
+                <h2>Database Design</h2>
+                <h3>(Beginner level)</h3>
+                <p>Designing and managing databases for efficient data storage and retrieval.</p>
+                <a href="#">learn</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="work">
+    <div class="container">
+        <h1 class="sub-tittle">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/snakegame.png" alt="Work 1">
+                <div class="layer">
+                    <h3>Snake Game</h3>
+                    <p>A classic snake game built using programming fundamentals, featuring score tracking and smooth controls.</p>
+                    <a href="#">View Details</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/BloodDonate.png" alt="Work 2">
+                <div class="layer">
+                    <h3>Blood Donation Website</h3>
+                    <p>A web platform that connects blood donors with recipients, including donor registration and search features.</p>
+                    <a href="#">View Details</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/chatApp.png" alt="Work 3">
+                <div class="layer">
+                    <h3>Chat App</h3>
+                    <p>A real-time chat application that allows users to send messages and communicate securely.</p>
+                    <a href="#">View Details</a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+
+            <div class="contact-left">
+                <h1 class="sub-tittle">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> jarinjakia5215@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 01790883168</p>
+
+                <div class="social-icons">
+                    <a href="#/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/jarinjakia-20"><i class="fa-brands fa-github"></i></a>
+                </div>
+
+                <a href="#" download class="btn btn2">Download CV</a>
+            </div>
+
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright &copy; Jarin.</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
