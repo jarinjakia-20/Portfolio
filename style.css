@@ -53,7 +53,7 @@ nav ul li a:hover::after{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 20%;
+    margin-top: 8%;
 }
 .header-text{
     font-size: 30px;
@@ -81,8 +81,7 @@ nav ul li a:hover::after{
     background-color: rgb(140, 193, 214);
 }
 #about .row{
-    display: flex;
-    align-items: center;
+    display   align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 40px;
@@ -335,4 +334,52 @@ form.btn2{
     font-weight: 300;
 
 }
+
+@media only screen and (max-width: 768px){
+
+    .header-content{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .header-text h1{
+        font-size: 40px;
+    }
+
+    .header-img img{
+        width: 180px;
+        height: 180px;
+        margin-top: 20px;
+    }
+
+    #about .row{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-col-1,
+    .about-col-2{
+        flex-basis: 100%;
+    }
+
+    .sub-title{
+        font-size: 40px;
+    }
+
+    nav{
+        justify-content: center;
+    }
+
+    nav ul li{
+        margin: 10px;
+    }
+
+    .contact-left,
+    .contact-right{
+        flex-basis: 100%;
+    }
+
+}
+
 
